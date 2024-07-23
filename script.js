@@ -106,17 +106,39 @@ function equalNums(num1,num2){
 console.log(equalNums(5,5));
 
 // Ternary Operator uses ? as an if statement
-let age= 12;
+// let age= 12;
 // if the driver's age is > 16 then the value will be true we are assigning a true or false value based on the "age" condition
-const canDrive= age >= 16 ? true : false
-console.log(canDrive)
+// const canDrive= age >= 16 ? true : false
+// console.log(canDrive)
 
-// Logical Operators
+// Logical Operators- evaluate from left to right
 // Include || or (as long as one is true the result will be true), && and, ! not, ?? null
 
+// Or operator
 let hasReservation= true;
 let acceptingWalkIns= false;
-
 const hasAccessToTable= hasReservation || acceptingWalkIns;
-
 console.log('Table available:', hasAccessToTable);
+
+//And operator (both values must be true otherwise it is false)
+//i.e. true && false = false
+let age=18;
+let canDrinkAlcohol= true
+
+const ableToDrink= age >= 21 && canDrinkAlcohol;
+console.log("At or above the legal drinking age:", ableToDrink);
+
+// ! Not or Inverse operator
+let isWorkingDuringTheWeek= true
+const isWeekend= !isWorkingDuringTheWeek;
+console.log('Myron is working this weekend:', isWeekend);
+
+// ?? Null operators allows us to impose a default value 
+let a= null
+const result= a ?? true;
+//another way of writing, if the () expression is true then return a otherwise ":" return false
+// const result= (a !== null && a !== undefined) ? a : false;
+
+console.log(result)
+
+// Falsy means when we use logical operators with non-boolean values, these falsy values include null, undefined, non-numbers, empty strings, 0, and false
