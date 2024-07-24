@@ -142,3 +142,54 @@ const result= a ?? true;
 console.log(result)
 
 // Falsy means when we use logical operators with non-boolean values, these falsy values include null, undefined, non-numbers, empty strings, 0, and false
+
+// If statements
+
+let priceOfChocolate= 2.00;
+let cashInHand= 1;
+
+const canByChocolate= cashInHand >= priceOfChocolate;
+console.log("Chocolate can be purchased:", canByChocolate)
+
+// To use an if else statement we would say
+
+if (canByChocolate){ //When true the first if will execute otherwise it will go to the else statement
+    console.log("Enjoy")
+}else{
+    console.log("Sorry Charlie, that's not enough")
+}
+
+// Else if extends the function to include more parameters
+// Below is an example of restaurant hours 
+let hour=24;
+if (hour>=6 && hour<=12){
+    console.log("Breakfast Time");
+}else if(hour>12 && hour <= 16) {
+    console.log("Lunch Time");
+}else if(hour >16 && hour <= 22){
+    console.log('Dinner Time');
+}else{
+    console.log('We are closed');
+}
+
+// Switch case statements- used for equality comparisons
+let job= 'Plumber';
+
+// This is an example of if else statements
+if (job === 'Developer'){
+    console.log('Writes code')
+}else if(job === 'Designer'){
+    console.log('Makes UI')
+}else {console.log( 'Not in tech')}
+
+// This is the switch case
+switch (job){
+    case 'Developer':
+        console.log('Writes Code');
+        break;
+    case 'Designer':
+        console.log ('Makes UI');
+        break;
+    default: 
+        console.log('Not in tech');
+}
