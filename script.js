@@ -209,4 +209,56 @@ switch (light){
     default: console.log('The light is down, stop and proceed with caution');
 }
 
+//For loops- executes a code block multiple times until directed to stop, better for iterating over an array
+let numbers= [1, 2, 3, 4, 5, 6, 7, 8]
+// let index= 0
+// let lengthOfArray=numbers.length;
 
+// This is very repetative 
+// console.log(numbers[index++]);
+// console.log(numbers[index++]);
+// console.log(numbers[index++]);
+// console.log(numbers[index++]);
+// console.log(numbers[index++]);
+// console.log(numbers[index++]);
+for(
+    //initialize
+    let index=0; 
+    //condition (is the index less than the numbers.length)
+    index < numbers.length;
+    //increment/decrement to terminate the code once it reaches the end of the index 
+    index++ ){
+        console.log(numbers[index])
+    };
+
+for(
+    let num=0;
+    num < 20;
+    num++
+){
+    console.log(num)
+}
+
+// While loops-continue to execute while a condition is true
+// for (
+//     let index=0;
+//     index < numbers.length;
+//     index++
+// ){
+//     console.log(numbers[index])
+// }
+
+
+let index=0;
+while (index<numbers.length){
+    console.log(numbers[index]);
+    index++;
+}
+
+let sum=0
+while (true){
+    console.log('Loop');
+    sum++;
+    if(sum===10)
+        break;
+}
