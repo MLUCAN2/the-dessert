@@ -193,3 +193,20 @@ switch (job){
     default: 
         console.log('Not in tech');
 }
+
+let light= 'none';
+
+switch (light){
+    case 'green':
+        console.log('The light is:', light, '-Please go');
+        break;
+    case 'yellow':
+        console.log('The light is:', light, '-Please slow down');
+        break;
+    case 'red':
+        console.log('The light is:', light, '-STOP');
+        break;
+    default: console.log('The light is down, stop and proceed with caution');
+}
+
+
