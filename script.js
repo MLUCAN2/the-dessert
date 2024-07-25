@@ -239,7 +239,7 @@ for(
     console.log(num)
 }
 
-// While loops-continue to execute while a condition is true
+// While loops-continue to execute while a condition is true, the condition must be true in order to execute
 // for (
 //     let index=0;
 //     index < numbers.length;
@@ -262,3 +262,21 @@ while (true){
     if(sum===10)
         break;
 }
+
+// For-in loop
+const course= {
+    name: 'JS for beginners',
+    duration: 3,
+    sections: 7
+};
+
+for (const key in course){
+    console.log(course[key]);
+
+};
+
+//This becomes ineficient when we have many keys
+// console.log(course.name);
+// console.log(course.duration);
+// console.log(course.sections);
+
