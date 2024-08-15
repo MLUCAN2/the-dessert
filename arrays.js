@@ -36,24 +36,50 @@ console.log(animals[animals.length-1]);
 //Incorporate if, else if, and else statements with an array
 var colors= ['red', 'orange', 'yellow', 'green', 'blue', 'violet'];
 let selectedColor= colors[30];
-if(selectedColor===colors[5]){
-    console.log("The color is violet");
+// if(selectedColor===colors[5]){
+//     console.log("The color is violet");
+// }
+// else if(selectedColor===colors[4]){
+//     console.log('The color is blue');
+// }
+// else if(selectedColor===colors[3]){
+//     console.log('The color is green')
+// }
+// else if(selectedColor===colors[2]){
+//     console.log('The color is yellow')
+// }
+// else if(selectedColor===colors[1]){
+//     console.log('The color is orange')
+// }
+// else if(selectedColor===colors[0]){
+//     console.log('The color is red')
+// }
+// else{
+//     console.log('Please enter a number between 0 and 5 in the selectedColor value')
+// }
+
+// Now do it in switch case
+switch(selectedColor){
+    case colors[5]:
+        console.log("The color is violet");
+        break
+    case colors[4]:
+        console.log("The color is blue");
+        break
+    case colors[3]:
+        console.log("The color is green");
+        break
+    case colors[2]:
+        console.log("The color is yellow");
+        break
+    case colors[1]:
+        console.log("The color is orange");
+        break
+    case colors[0]:
+        console.log("The color is red");
+        break
+    default: 
+        console.log("Please enter a number between 0 and 5 in the selectedColor value");
 }
-else if(selectedColor===colors[4]){
-    console.log('The color is blue');
-}
-else if(selectedColor===colors[3]){
-    console.log('The color is green')
-}
-else if(selectedColor===colors[2]){
-    console.log('The color is yellow')
-}
-else if(selectedColor===colors[1]){
-    console.log('The color is orange')
-}
-else if(selectedColor===colors[0]){
-    console.log('The color is red')
-}
-else{
-    console.log('Please enter a number between 0 and 5 in the selectedColor value')
-}
+
+
