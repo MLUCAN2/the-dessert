@@ -26,46 +26,76 @@ entered a number smaller than 10",
 otherwise, send "You entered a big number"
 to the console. */
 
-var number= prompt('Please enter a whole number', );
-if( number < 10){
-    console.log('You entered a number lower than 10')
-}
-else if (number > 9){
-    console.log('You entered a number greater than 10')
-}
-else if (number == 10){
-    console.log(`Congrats, you entered ${number}, you're a winner!`)
-}
-else if (number){
-    console.log('Well you have to enter something silly')
-}
-else {
-    console.error('Thats not a number you goose');
+// var number= prompt('Please enter a whole number', );
+// if( number < 10){
+//     console.log('You entered a number lower than 10')
+// }
+// else if (number > 9){
+//     console.log('You entered a number greater than 10')
+// }
+// else if (number == 10){
+//     console.log(`Congrats, you entered ${number}, you're a winner!`)
+// }
+// else if (number){
+//     console.log('Well you have to enter something silly')
+// }
+// else {
+//     console.error('Thats not a number you goose');
     
-}
+// }
 
 /* Challenge 5: If the user types a number
 less than 10, use a loop to print out the
 numbers from zero to 9 in the console. */ 
 
 
-var number= prompt('Please enter a whole number', );
-if( number < 10){
-    console.log('You entered a number less than 10')
-    for (var i=0; i < 10; i++){
-    console.log(`Here is a ${i}`)
+// var number= prompt('Please enter a whole number', );
+// if( number < 10){
+//     console.log('You entered a number less than 10')
+//     for (var i=0; i < 10; i++){
+//         if (i == number){
+//             console.log(`Here is a ${i}  <---This is your number`)
+//         }
+//         else{
+//             console.log(`Here is a ${i}`)
+//         }
+//     }
+// }
+// else if (number > 10){
+//     console.log('You entered a number greater than 10')
+// }
+// else if (number == 10){
+//     console.log(`Congrats, you entered ${number}, you're a winner!`)
+// }
+// else if (''){
+//     console.log('Well you have to enter something silly')
+// }
+// else {
+//     console.error('Thats not a number you goose');
+    
+// }
+
+// We can also imbed the loop into a function
+function numberFinder(){
+    var number= prompt(`Please enter a number:`);
+    if(number < 10 && number > 0){
+        for( var i=0; i<10; i++){
+            if (i == number){
+                console.log(`Here is a ${i} <---This is what you chose`);
+            }
+            else{
+                console.log(`Here is a ${i}`);
+            }
+        }
+    }
+    else if(number > 10){
+        console.log(`You chose ${number}, that was bigger than expected`)
+    }
+    else if( number == 10){
+        console.log(`Congrats, you are a winner!`)
+    }
+    else {
+        console.log('You need to enter a number');
     }
 }
-else if (number > 10){
-    console.log('You entered a number greater than 10')
-}
-else if (number == 10){
-    console.log(`Congrats, you entered ${number}, you're a winner!`)
-}
-else if (number){
-    console.log('Well you have to enter something silly')
-}
-else {
-    console.error('Thats not a number you goose');
-    
-}
+numberFinder();
