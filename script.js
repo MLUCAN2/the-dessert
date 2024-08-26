@@ -128,4 +128,31 @@
 
 // hospitality()
 
+// To add mouseover and mouseout events
+var box= document.querySelector('p');
+
+box.addEventListener('mouseover', function(){
+    box.innerHTML= 'This is a mouseover event!';
+})
+box.addEventListener('mouseout', function() {
+    box.innerHTML= 'Where did you go?!'
+})
+
+var list1= document.querySelector('#item1')
+
+list1.addEventListener('mouseover', function(){
+    list1.innerHTML= 'Where\'s Donald?'
+})
+
+// To add a scroll event
+var pageTop;
+
+// This will tell you in the console, how far you are going down
+// This is also inefficient because it has to track the position
+window.addEventListener('scroll', function(){
+    pageTop=window.pageYOffset;
+    console.log(pageTop)
+});
+
+
 
