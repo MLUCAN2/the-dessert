@@ -150,9 +150,30 @@ var pageTop;
 // This will tell you in the console, how far you are going down
 // This is also inefficient because it has to track the position
 window.addEventListener('scroll', function(){
-    pageTop=window.pageYOffset;
+    pageTop=window.scrollY;
     console.log(pageTop)
 });
 
+// How to resize the window-used for responsive design
+// You will have to go to the console and move the screen size
+window.addEventListener('resize', function(){
+    console.log(`page width is ${window.innerHeight}`);
+    console.log(`page width is ${window.innerWidth}`);
+});
+
+// We can also create a keydown event listener that will log keystrokes
+window.addEventListener('keydown', function(event){
+    alert(`I don\'t recall saying to enter the ${event.key} key!`)
+});
+
+var button= document.querySelector('button')
+var green= document.querySelectorAll('.green')
+function greenButton(e){
+    for (var i =0; i<green.length; i++){
+        green[i].style.color='green'
+    e.preventDefault();
+}
+}
+button.addEventListener('click', greenButton)
 
 
