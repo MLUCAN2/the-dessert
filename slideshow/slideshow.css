@@ -1,0 +1,13 @@
+#images{
+    margin: 100px auto 20px auto;
+    border: solid 10px #4c4c4c;
+    width: 400px;
+    height: 250px;
+    position: relative;
+}
+
+#images img{
+    position:absolute;
+    left: 0;
+    top: 0;
+}
