@@ -1,8 +1,10 @@
+
+
 #images{
     margin: 100px auto 20px auto;
     border: solid 10px #4c4c4c;
     width: 400px;
-    height: 250px;
+    height: 266px;
     position: relative;
 }
 
@@ -10,4 +12,22 @@
     position:absolute;
     left: 0;
     top: 0;
+}
+
+p{
+    text-align: center;
+}
+
+.fadeinimg{
+    animation: fadein 2s;
+
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
